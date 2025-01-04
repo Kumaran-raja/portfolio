@@ -1,0 +1,126 @@
+#lap_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+#lap_header div{
+    display: flex;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto 0px;
+}
+.logo1{
+    display: none;
+}
+
+#lap_header li,.mobile_header2 li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+.menu_item{
+    text-decoration: none;
+    color: white;
+}
+#mobile_header{
+    display: none;
+    background-color: black;
+}
+.nav_close{
+    display: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    z-index: 100;
+}
+.mobile_header1{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile_header2{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: black;
+}
+.logo1{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+@media (min-width: 320px) and (max-width: 375px) {
+   
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
+}
+@media (min-width: 425px) and (max-width: 480px) {
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}
