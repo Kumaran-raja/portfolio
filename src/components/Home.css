@@ -1,0 +1,69 @@
+#Home{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.myphoto{
+    height: 220px;
+    border-radius: 180px;
+    display: block;
+    margin: 0px auto;
+}
+#Home div{
+    text-align: center;
+}
+.name{
+    margin: 20px;
+}
+.name::first-letter{
+    color: #FFD700;
+}
+#Home h2{
+    margin-top: 30px;
+}
+.contact_icons{
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+}
+.contact_icons:hover{
+    transform: scale(1.2);
+}
+@media (min-width: 320px) and (max-width: 375px) {
+    .contact_icons{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+
+}
+@media (min-width: 425px) and (max-width: 480px) {
+
+}
+@media (min-width: 480px) and (max-width: 600px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .myphoto{
+        height: 260px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+    .myphoto{
+        height: 260px;
+    }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .myphoto{
+        height: 280px;
+    }
+}
+@media (min-width: 1200px) {
+    .myphoto{
+        height: 280px;
+    }
+}

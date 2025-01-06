@@ -2,9 +2,19 @@
     display: flex;
     justify-content: space-between;
     background-color: black;
+    height: 10vh;
 }
 #lap_header div{
     display: flex;
+    align-items: center;
+}
+
+.menu_icon{
+    color: white;
+    display: block;
+    margin: auto 20px;
+    width: 25px;
+    height: 25px;
 }
 .logo{
     width: 50px;
@@ -15,8 +25,13 @@
 .logo1{
     display: none;
 }
-
-#lap_header li,.mobile_header2 li{
+#lap_header li{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0px 20px;
+    color: #00FFFF;
+}
+.mobile_header2 li{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -30,6 +45,7 @@
 #mobile_header{
     display: none;
     background-color: black;
+
 }
 .nav_close{
     display: none;
@@ -42,6 +58,7 @@
 .mobile_header1{
     display: flex;
     justify-content: space-between;
+    height: 10vh;
 }
 .mobile_header2{
     width: 300px;
@@ -50,6 +67,7 @@
     right: 0;
     top: 0;
     background-color: black;
+    z-index: 10000;
 }
 .logo1{
     display: block;

@@ -1,0 +1,62 @@
+.Certificate_grid{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 10px;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+.card{
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+}
+.card-img-top{
+    padding: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .card{
+        width: 80%;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .card{
+        width: 80%;
+    }
+}
+@media (min-width: 425px) and (max-width: 480px) {
+    .card{
+        width: 80%;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .Certificate_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+  
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+    .Certificate_grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .Certificate_grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .Certificate_grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .card{
+        width: 70%;
+    }
+}

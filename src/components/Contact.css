@@ -1,0 +1,200 @@
+.contact_grid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 30px;
+}
+.img_with_name {
+    position: relative;     
+    display: flex;            
+    justify-content: center;
+    align-items: center;    
+    margin-left: 20px;
+}
+.contact_content{
+    position: absolute; 
+  color: white;    
+  font-size: 50px;  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: center; 
+}
+.contact_img{
+    width: 90%;
+    opacity: 0.2;
+}
+.img_with_name::before {
+    content: '';               
+    position: absolute;           
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: -1;                    
+  }
+  .contact_msg_container{
+    margin: 30px;
+  }
+   .contact_msg_container input{
+    width: 70%;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+   }
+   .contact_msg_container textarea{
+    width: 70%;
+    height: 50px;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+   }
+   .contact_msg_container button{
+    font-size: 20px;
+    background-color: #003566;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+   }
+   .contact_icon{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto 20px;
+   }
+   .contact_address_container{
+    margin: 20px;
+   }
+   .contact_address_container p{
+        margin: 0px;
+        word-break: break-all;
+   }
+   .contact_address_container h3{
+    margin: 0px;
+}
+.contact_each_address{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 40px 0px;
+}
+.contact_each_address a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .contact_grid{
+        margin-top: 0px;
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+       .img_with_name{
+            margin-left: 0px;
+       }
+       .contact_each_address{
+        grid-template-columns: 25% 75%;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .contact_grid{
+        margin-top: 0px;
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+       .img_with_name{
+        margin-left: 0px;
+   }
+}
+@media (min-width: 425px) and (max-width: 480px) {
+    .contact_grid{
+        margin-top: 0px;
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+       .img_with_name{
+        margin-left: 0px;
+   }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .contact_grid{
+        margin-top: 0px;
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+       .img_with_name{
+        margin-left: 0px;
+   }
+   .img_with_name{
+    margin-left: 0px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .contact_grid{
+        grid-template-columns: 50% 50%;        
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+    .img_with_name{
+        display: none;
+    }
+    .contact_each_address{
+        grid-template-columns: 25% 75%;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+    .contact_grid{
+        grid-template-columns: 50% 50%;        
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+       .contact_msg_container textarea{
+        width: 90%;
+       }
+    .img_with_name{
+        display: none;
+    }
+
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .contact_grid{
+        grid-template-columns: 40% 30% 30%;
+    }
+    .contact_msg_container input{
+        width: 90%;
+       }
+         .contact_msg_container textarea{
+        width: 90%;
+       }
+       .contact_each_address{
+        grid-template-columns: 25% 75%;
+    }
+}
+@media (min-width: 1200px) {
+    .contact_grid{
+        grid-template-columns: 40% 30% 30%;
+    }
+
+}
