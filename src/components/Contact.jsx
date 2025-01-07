@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Contact.css"
 import contactimg from '../assets/contact.png'
 import { FaHome } from "react-icons/fa";
@@ -9,8 +9,12 @@ import whatsapp from '../assets/whatsapp.png'
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
 import emailjs from "emailjs-com";
+import { TiTick } from "react-icons/ti";
+import { TiCancel } from "react-icons/ti";
 export default function Contact() {
-    const formRef = useRef();
+  const formRef = useRef();
+  const [isSend,setSend]=useState(false);
+  const [isFailed,setFailed]=useState(false);
   const sendEmail = (e) => {
     e.preventDefault(); 
     emailjs
@@ -22,17 +26,18 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alert("Message Sent Successfully!");
+          setSend(!isSend);
+          setTimeout(()=>setSend(false),4000)
         },
         (error) => {
-          console.log(error.text);
-          alert("An error occurred. Please try again.");
+          setFailed(!isFailed);
+          setTimeout(()=>setFailed(false),4000)
         }
       );
 
     e.target.reset(); 
   };
+
   return (
     <div>
         <h1 className='contact_hide'>Contact Us</h1>
@@ -87,6 +92,16 @@ export default function Contact() {
             <a href="https://wa.me/919543439311?text=Hi there!" target='_blank'><img className="contact_icons" style={{margin:"15px"}}  src={whatsapp} alt="whatsapp"/></a>
         </div>
         </div>
+        </div>
+        <div>
+          <div className='send' style={{display:isSend?"flex":"none" ,alignItems:"center"}}>
+            <TiTick style={{color:"#5CB338",width:"50px",height:"50px"}}/>
+            <p style={{display:"block",margin:"auto 10px"}}>Message Sent Successfully!</p>
+          </div>
+          <div className='failed' style={{display:isFailed?"flex":"none" ,alignItems:"center"}}>
+            <TiCancel style={{color:"red",width:"50px",height:"50px",marginLeft:"10px"}}/>
+            <p style={{display:"block",margin:"auto 10px"}}>Message Not Sent Try Again</p>
+          </div>
         </div>
     </div>
     
