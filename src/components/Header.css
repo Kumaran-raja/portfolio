@@ -17,13 +17,23 @@
     height: 25px;
 }
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     display: block;
     margin: auto 0px;
+    animation: rotateLogo 4s linear infinite;
+}
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 .logo1{
     display: none;
+    animation: rotateLogo 4s linear infinite;
 }
 #lap_header li{
     list-style-type: none;

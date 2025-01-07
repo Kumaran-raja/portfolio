@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./Contact.css"
 import contactimg from '../assets/contact.png'
 import { FaHome } from "react-icons/fa";
@@ -8,34 +8,54 @@ import facebook from '../assets/facebook.png'
 import whatsapp from '../assets/whatsapp.png'
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
+import emailjs from "emailjs-com";
 export default function Contact() {
+    const formRef = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault(); 
+    emailjs
+      .sendForm(
+        "service_kumaranraja", 
+        "template_kumaranraja", 
+        formRef.current,
+        "BkDqGCMZWScgUbklL" 
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message Sent Successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("An error occurred. Please try again.");
+        }
+      );
+
+    e.target.reset(); 
+  };
   return (
     <div>
         <h1 className='contact_hide'>Contact Us</h1>
-
         <div className='contact_grid'>
-
         <div className='img_with_name'>
             <h1 className='contact_content'>Contact Us</h1>
             <img className='contact_img' src={contactimg} alt="" />
         </div>
-        <div className='contact_msg_container'>
+        <form ref={formRef} className='contact_msg_container' onSubmit={sendEmail}>
             <div>
                 <label htmlFor="name" style={{color:"#FFD700",fontSize:"20px"}}>Name</label><br />
-                <input type="text" />
+                <input type="text" name='name' required/>
             </div>
             <div>
                 <label htmlFor="email" style={{color:"#FFD700",fontSize:"20px"}}>Email</label><br />
-                <input type="email" />
+                <input type="email" name='email' required/>
             </div>
             <div>
                 <label htmlFor="message" style={{color:"#FFD700",fontSize:"20px"}}>Message</label><br />
-                <textarea type="text" />
+                <textarea name='message' required/>
             </div>
-            <a href="https://github.com/Kumaran-raja/Swimming-pool" target='_blank' class="btn btn-primary" style={{padding:"10px 40px"}}>Submit</a>
-
-            {/* <button></button> */}
-        </div>
+            <button className="btn btn-primary" style={{padding:"10px 40px"}} type='submit'>Submit</button>
+        </form>
         <div className='contact_address_container'>
             <div className='contact_each_address'>
             <FaHome className='contact_icon' style={{color:"#F7E7CE"}}/>

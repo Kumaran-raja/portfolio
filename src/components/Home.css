@@ -6,9 +6,14 @@
 }
 .myphoto{
     height: 220px;
-    border-radius: 180px;
+    border-radius: 360px;
     display: block;
     margin: 0px auto;
+    transition: transform 6s ease-in;
+    transform-style: preserve-3d;
+}
+.myphoto:hover{
+    transform: rotateY(360deg);
 }
 #Home div{
     text-align: center;
@@ -18,7 +23,7 @@
 
 }
 .name::first-letter{
-    color: red;
+    color: yellow;
     
 }
 #Home h2{
