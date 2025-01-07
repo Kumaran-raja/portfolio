@@ -98,7 +98,8 @@ position: absolute;
     padding: 10px;
     width: max-content;
     border: 2px solid #5CB338;
-    position: absolute;
+    position: fixed;
+
     top: 0;
     right: 0;
     margin-top: 12vh;
@@ -109,10 +110,10 @@ position: absolute;
     padding: 10px;
     width: max-content;
     border: 2px solid red;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 10%;
     right: 0;
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
     background-color: black;
     z-index: 1000;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import "./Contact.css"
 import contactimg from '../assets/contact.png'
 import { FaHome } from "react-icons/fa";
