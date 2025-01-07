@@ -14,6 +14,7 @@ import vsCode from '../assets/visual-studio.png'
 import spring from '../assets/spring-boot.png'
 import jQuery from '../assets/jquery.png'
 import bootstrap from '../assets/bootstrap.png'
+import figma from '../assets/figma.png'
 export default function Skills() {
   return (
     <div id="skills">
@@ -50,7 +51,6 @@ export default function Skills() {
       </div>
       <h1 className="skill_set title_sub_name">Backend Development</h1>
       <div className="skills_container">
-
         <div>
           <img className="skills_img" src={java} alt="java logo"/>
           <p className="skill_name">Java</p>
@@ -63,15 +63,17 @@ export default function Skills() {
           <img className="skills_img" src={firebase} alt="firebase logo"/>
           <p className="skill_name">Firebase</p>
         </div>
-      
         <div>
           <img className="skills_img" src={spring} alt="spring logo"/>
           <p className="skill_name">Spring</p>
         </div>
-       
       </div>
       <h1 className="skill_set title_sub_name">Development Tools</h1>
       <div className="skills_container">
+      <div>
+          <img className="skills_img" style={{padding:"10px"}} src={figma} alt="figma logo"/>
+          <p className="skill_name">Figma</p>
+        </div>
         <div>
           <img className="skills_img" src={vsCode} alt="VS logo" />
           <p className="skill_name">VS Code</p>
@@ -89,9 +91,7 @@ export default function Skills() {
           <p className="skill_name">GitHub</p>
         </div>
       </div>
-
    </div>
-   
   </div>
   )
 }

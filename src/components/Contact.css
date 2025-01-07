@@ -99,10 +99,8 @@ position: absolute;
     width: max-content;
     border: 2px solid #5CB338;
     position: fixed;
-
-    top: 0;
+    top: 10;
     right: 0;
-    margin-top: 12vh;
     background-color: black;
     z-index: 1000;
 }
@@ -113,7 +111,6 @@ position: absolute;
     position: fixed;
     top: 10%;
     right: 0;
-    /* margin-top: 12vh; */
     background-color: black;
     z-index: 1000;
 }

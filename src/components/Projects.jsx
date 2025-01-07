@@ -20,7 +20,7 @@ export default function Projects() {
           <h5 className="card-title">E-Commerce Website</h5>
           <p className="card-text">React Js</p>
           <div style={{display:"flex",justifyContent:"space-between"}}>
-            <a href="https://vibevault.onrender.com/" class="btn btn-primary" target='_blank' style={{padding:"10px 20px"}}>View</a>
+            <a href="https://vibevault.onrender.com/" class="btn btn-primary" target='_blank'>View</a>
             <a href="https://github.com/Kumaran-raja/E-commerce-Website" target='_blank' class="btn btn-primary">Source Code</a>
           </div>
         </div>
