@@ -27,16 +27,52 @@
 }
 #lap_header li{
     list-style-type: none;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0px 20px;
-    color: #00FFFF;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a11cb, #9e32c0,#A888B5,#EFB6C8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
 }
+@keyframes shine {
+    0% {
+      background-position: 0% left;
+    }
+    25%{
+      background-position: 50% left;
+
+    }
+    50% {
+        background-position: 100% center;
+    }
+    75% {
+        background-position: 150% left;
+    }
+    100% {
+      background-position: 200% left;
+    }
+  }
 .mobile_header2 li{
     list-style-type: none;
     display: flex;
     align-items: center;
     margin: 20px;
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a11cb, #9e32c0,#A888B5,#EFB6C8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.designation{
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a11cb, #9e32c0,#A888B5,#EFB6C8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu_item{
     text-decoration: none;
@@ -134,7 +170,15 @@
     }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-
+    #lap_header{
+        display: none;
+    }
+    #mobile_header{
+        display: block;
+    }
+    .nav_close{
+        display: block;
+    }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   

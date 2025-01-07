@@ -18,10 +18,10 @@ export default function Skills() {
   return (
     <div id="skills">
     <div >
-      <h1 className="skills_headline">Skills</h1>
+      <h1 className="skills_headline title_name">Skills</h1>
     </div>
    <div style={{borderLeft:"1px #00FFFF solid", paddingLeft:"20px"}}>
-      <h1 className="skill_set">Frontend Development</h1>
+      <h1 className="skill_set title_sub_name">Frontend Development</h1>
       <div className="skills_container">
         <div>
           <img className="skills_img" src={html} alt="HTML5 logo" />
@@ -48,7 +48,7 @@ export default function Skills() {
           <p className="skill_name">React</p>
         </div>
       </div>
-      <h1 className="skill_set">Backend Development</h1>
+      <h1 className="skill_set title_sub_name">Backend Development</h1>
       <div className="skills_container">
 
         <div>
@@ -70,7 +70,7 @@ export default function Skills() {
         </div>
        
       </div>
-      <h1 className="skill_set">Development Tools</h1>
+      <h1 className="skill_set title_sub_name">Development Tools</h1>
       <div className="skills_container">
         <div>
           <img className="skills_img" src={vsCode} alt="VS logo" />

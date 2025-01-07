@@ -15,9 +15,11 @@
 }
 .name{
     margin: 20px;
+
 }
 .name::first-letter{
-    color: #FFD700;
+    color: red;
+    
 }
 #Home h2{
     margin-top: 30px;

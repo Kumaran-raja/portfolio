@@ -17,19 +17,24 @@ export default function Header() {
   return (
     <div style={{position:"sticky",top:"0" ,backgroundColor:"black",zIndex:"1000"}}>
         <header id='lap_header'>
+        <div style={{display:"flex"}}>
             <img className='logo' src={logo} alt="" />
+            <h1 style={{display:"block",margin:"auto 10px",color:"#FFD700"}} className='title_sub_name'>KUMARANRAJA</h1>
+            </div>
             <div>
               <Link className='menu_item' to='/' onClick={(e)=>linkClick(e,"/")}><li>Home</li></Link>
               <Link className='menu_item' to='/Certificates' onClick={(e)=>linkClick(e,"/Certificates")}><li>Certifications</li></Link>
               <Link className='menu_item' to='/Skills' onClick={(e)=>linkClick(e,"/Skills")}><li>Skills</li></Link>
               <Link className='menu_item' to='/Projects' onClick={(e)=>linkClick(e,"/Projects")}><li>Projects</li></Link>
-              <Link className='menu_item' to='/Contacts' onClick={(e)=>linkClick(e,"/Contacts")}><li>Contact Us</li></Link>
+              <Link className='menu_item' to='/Contacts' onClick={(e)=>linkClick(e,"/Contacts")}><li>Contact</li></Link>
             </div>
-            <div></div>
         </header>
         <header id='mobile_header'>
           <div className='mobile_header1'>
+            <div style={{display:"flex"}}>
             <img className='logo' src={logo} alt="" />
+            <h1 style={{display:"block",margin:"auto 10px",color:"#FFD700"}} className='title_sub_name'>KUMARANRAJA</h1>
+            </div>
             <GiHamburgerMenu className='menu_icon'  onClick={()=>{setMenuVisible(!menuVisible)}}/>
           </div>
        
@@ -41,7 +46,7 @@ export default function Header() {
               <Link className='menu_item' to='/Certificates' onClick={(e)=>linkClick(e,"/Certificates")}><li>Certifications</li></Link>
               <Link className='menu_item' to='/Skills' onClick={(e)=>linkClick(e,"/Skills")}><li>Skills</li></Link>
               <Link className='menu_item' to='/Projects' onClick={(e)=>linkClick(e,"/Projects")}><li>Projects</li></Link>
-              <Link className='menu_item' to='/Contacts' onClick={(e)=>linkClick(e,"/Contacts")}><li>Contact Us</li></Link>
+              <Link className='menu_item' to='/Contacts' onClick={(e)=>linkClick(e,"/Contacts")}><li>Contact</li></Link>
             </div>
         </header>
     </div>

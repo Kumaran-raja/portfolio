@@ -13,7 +13,21 @@
 .card-img-top{
     padding: 5px;
 }
-
+.title_name{
+    text-align: center;
+    background: linear-gradient(320deg,#FFD700,#FFD700,#00ffff,#FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.title_sub_name{
+    background: linear-gradient(to right,#FFD700,#00ffff,#FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 @media (min-width: 320px) and (max-width: 375px) {
     .card{
         width: 80%;

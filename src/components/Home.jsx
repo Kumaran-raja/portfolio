@@ -11,8 +11,8 @@ export default function Home() {
     <div id='Home'>
         <div>
           <img src={myphoto} alt="muthukumaran photo" className='myphoto'/>
-          <h1 className='name'>Hi, I am <strong>MUTHUKUMARAN R</strong></h1>
-          <h2>
+          <h1 className='name' style={{color:"#F8D9B7"}}>Hi, I am <strong>MUTHUKUMARAN R</strong></h1>
+          <h2 className='designation'>
           UI/UX Designer | Full-Stack Developer | Application Developer
           </h2>
           <div>

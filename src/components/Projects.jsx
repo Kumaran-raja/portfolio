@@ -10,9 +10,9 @@ import ecommerce from '../assets/e-commerce.png'
 export default function Projects() {
   return (
     <section>
-      <h1 style={{textAlign:"center",color:"#F7E7CE",marginTop:"10px"}}>PROJECTS</h1>
+      <h1 className='project_text_color'> PROJECTS</h1>
       {/* web applications */}
-      <h2 style={{textAlign:"center",color:"#FFD700",margin:"40px"}}>Web Applications</h2>
+      <h2 style={{textAlign:"center",color:"#FFD700",margin:"40px"}} className='title_name'>Web Applications</h2>
       <div className='project_grid'>
       <div class="card" >
         <img src={ecommerce} class="card-img-top" alt="..."/>
@@ -20,7 +20,7 @@ export default function Projects() {
           <h5 class="card-title">E-Commerce Website</h5>
           <p class="card-text">React Js</p>
           <div style={{display:"flex",justifyContent:"space-between"}}>
-            <a href="https://vibevault.onrender.com/" class="btn btn-primary" target='_blank'>View</a>
+            <a href="https://vibevault.onrender.com/" class="btn btn-primary" target='_blank' style={{padding:"10px 20px"}}>View</a>
             <a href="https://github.com/Kumaran-raja/E-commerce-Website" target='_blank' class="btn btn-primary">Source Code</a>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Projects() {
       </div>
     </div>
     {/* Android projects */}
-      <h2 style={{textAlign:"center",color:"#FFD700",margin:"50px"}}>Android Applications</h2>
+      <h2 style={{textAlign:"center",color:"#FFD700",margin:"50px"}} className='title_name'>Android Applications</h2>
       <div className='project_grid'>
       <div class="card" >
         <img src={digitalmarketing} class="card-img-top" alt="..."/>
