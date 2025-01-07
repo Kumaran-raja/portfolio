@@ -22,10 +22,10 @@
     margin: 20px;
 
 }
-.name::first-letter{
-    color: yellow;
+/* .name::first-letter{
+    color: #00ffff;
     
-}
+} */
 #Home h2{
     margin-top: 30px;
 }
@@ -36,6 +36,14 @@
 }
 .contact_icons:hover{
     transform: scale(1.2);
+}
+.designation{
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a11cb, #9e32c0,#6a11cb,#6a11cb);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media (min-width: 320px) and (max-width: 375px) {
     .contact_icons{
