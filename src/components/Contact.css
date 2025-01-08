@@ -99,7 +99,7 @@ position: absolute;
     width: max-content;
     border: 2px solid #5CB338;
     position: fixed;
-    top: 10;
+    top: 10%;
     right: 0;
     background-color: black;
     z-index: 1000;
