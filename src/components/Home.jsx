@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import myphoto from '../assets/myphoto.jpg'
+import myphoto from '../assets/profile.jpg'
 import instagram from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
 import linkedin from '../assets/linkedin.png'

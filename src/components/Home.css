@@ -6,7 +6,7 @@
 }
 .myphoto{
     height: 220px;
-    border-radius: 360px;
+    border-radius: 180px;
     display: block;
     margin: 0px auto;
     transition: transform 6s ease-in;
