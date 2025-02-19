@@ -5,16 +5,17 @@ import js from '../assets/js.png'
 import css from '../assets/css.png'
 import java from '../assets/java.png'
 import react from '../assets/react.png'
-import mongodb from '../assets/mongodb.png'
+import mysql from '../assets/MySQL.png'
 import firebase from '../assets/firebase.png'
 import git from '../assets/git.png'
 import github from '../assets/github.png'
 import androidStudio from '../assets/android-studio.png'
 import vsCode from '../assets/visual-studio.png'
 import spring from '../assets/spring-boot.png'
-import jQuery from '../assets/jquery.png'
+import Tailwind from '../assets/Tailwind CSS.png'
 import bootstrap from '../assets/bootstrap.png'
 import figma from '../assets/figma.png'
+import eclipse from '../assets/Eclipse IDE.png'
 export default function Skills() {
   return (
     <div id="skills">
@@ -41,8 +42,8 @@ export default function Skills() {
           <p className="skill_name">JavaScript</p>
         </div>
         <div>
-          <img className="skills_img" src={jQuery} alt="jquery logo" />
-          <p className="skill_name">jQuery</p>
+          <img className="skills_img" src={Tailwind} alt="jquery logo" />
+          <p className="skill_name">Tailwind</p>
         </div>
         <div>
           <img className="skills_img" src={react} alt="react logo" />
@@ -56,8 +57,8 @@ export default function Skills() {
           <p className="skill_name">Java</p>
         </div>
         <div>
-          <img className="skills_img" src={mongodb} alt="mongoDb logo" />
-          <p className="skill_name">MongoDB</p>
+          <img className="skills_img" src={mysql} alt="mongoDb logo" />
+          <p className="skill_name">MySQL</p>
         </div>
         <div>
           <img className="skills_img" src={firebase} alt="firebase logo"/>
@@ -77,6 +78,10 @@ export default function Skills() {
         <div>
           <img className="skills_img" src={vsCode} alt="VS logo" />
           <p className="skill_name">VS Code</p>
+        </div>
+        <div>
+          <img className="skills_img" src={eclipse} alt="android studio logo" />
+          <p className="skill_name">Android Studio</p>
         </div>
         <div>
           <img className="skills_img" src={androidStudio} alt="android studio logo" />

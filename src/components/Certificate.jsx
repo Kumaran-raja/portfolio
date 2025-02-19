@@ -3,6 +3,7 @@ import "./Certificate.css"
 import certificate1 from '../assets/certificate1.jpg'
 import certificate2 from '../assets/certificate2.jpg'
 import certificate3 from '../assets/certificate3.jpg'
+import certificate4 from '../assets/frontend certificate.png'
 export default function Certificate() {
   return (
     <section>
@@ -32,7 +33,14 @@ export default function Certificate() {
           <a href="https://drive.google.com/file/d/1-5pm54VOSLDLMS2EpcPTmQLlPKCoUIH_/view?usp=sharing" target='_blank' class="btn btn-primary" style={{padding:"10px 40px"}}>View Certificate</a>
         </div>
       </div>
-      
+      <div className="card" >
+        <img src={certificate4} className="card-img-top" alt="..."/>
+        <div className="card-body">
+          <h5 className="card-title">Front End Development Libraries</h5>
+          <p className="card-text">Mastered React, Bootstrap, Tailwind CSS, and jQuery to build responsive, interactive, and visually appealing web applications with optimized performance.</p>
+          <a href="https://drive.google.com/file/d/1IRdiJ-HxB3F3AI0FNwcOeqf_M9uAH9_Z/view?usp=drivesdk" target='_blank' class="btn btn-primary" style={{padding:"10px 40px"}}>View Certificate</a>
+        </div>
+      </div>
     </div>
     </section>
     

@@ -7,6 +7,8 @@ import swimmingpool from '../assets/swimming pool project.png'
 import sclwebsite from '../assets/scl project.png'
 import courseproject from '../assets/course project.png'
 import ecommerce from '../assets/e-commerce.png'
+import Attendance from '../assets/attendance.png'
+
 export default function Projects() {
   return (
     <section>
@@ -55,6 +57,17 @@ export default function Projects() {
           <div style={{display:"flex",justifyContent:"space-between"}}>
             <a href="https://course-platform-8xj2.onrender.com/" target='_blank' class="btn btn-primary">View</a>
             <a href="https://github.com/Kumaran-raja/Course-platform" target='_blank' class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div className="card" >
+        <img src={Attendance} className="card-img-top" alt="..."/>
+        <div className="card-body">
+          <h5 className="card-title">Attendance Management System</h5>
+          <p className="card-text">JSP, JDBC, MySQL</p>
+          <div style={{display:"flex",justifyContent:"space-between"}}>
+            {/* <a href="https://course-platform-8xj2.onrender.com/" target='_blank' class="btn btn-primary">View</a> */}
+            <a href="https://github.com/Kumaran-raja/Attendance-Project" target='_blank' class="btn btn-primary">Source Code</a>
           </div>
         </div>
       </div>
