@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './components/Home';
-import Header from './components/Header';
-import Certificates from './components/Certificate'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contacts from './components/Contact'
+import Home from './components/home';
+import Header from './components/header';
+import Certificates from './components/certificate'
+import Skills from './components/skills'
+import Projects from './components/projects'
+import Contacts from './components/contact'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 

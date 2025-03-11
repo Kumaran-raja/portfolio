@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Projects.css"
+import "./projects.css"
 import digitalmarketing from '../assets/digital marketing.webp'
 import pacemaker from '../assets/pacemaker.png'
 import bricksbreaker from '../assets/brick breaker.png'

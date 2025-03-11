@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Header.css'
+import './header.css'
 import logo from '../assets/logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLargeFill } from "react-icons/ri";

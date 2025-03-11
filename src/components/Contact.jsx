@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import "./Contact.css"
+import "./contact.css"
 import contactimg from '../assets/contact.png'
 import { FaHome } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
