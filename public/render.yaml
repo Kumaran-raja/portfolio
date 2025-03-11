@@ -4,5 +4,5 @@ redirects:
     status: 200
 
   - source: /certificates
-    destination: /Certificate.jsx
+    destination: /certificate.jsx
     status: 200
