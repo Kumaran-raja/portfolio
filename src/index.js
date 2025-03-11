@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './components/home';
 import Header from './components/header';
-import Certificates from './components/certificate'
-import Skills from './components/skills'
-import Projects from './components/projects'
-import Contacts from './components/contact'
+import Certificates from './components/certificate';
+import Skills from './components/skills';
+import Contacts from './components/contact';
+import Projects from './components/projects';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
