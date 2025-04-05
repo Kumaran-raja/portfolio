@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div id='Home'>
         <div>
-          <img src={myphoto} alt="muthukumaran photo" className='myphoto'/>
+          <img src={myphoto} loading="lazy" alt="muthukumaran r portfolio photo" className='myphoto'/>
           <h1 className='name' style={{color:"#F8D9B7"}}>Hi, I am <strong>MUTHUKUMARAN R</strong></h1>
           <h2 className='designation'>
           UI/UX Designer | Full-Stack Developer | Application Developer

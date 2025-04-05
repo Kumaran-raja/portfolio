@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import "./contact.css"
+import { Helmet } from "react-helmet";
 import contactimg from '../assets/contact.png'
 import { FaHome } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -40,11 +41,71 @@ export default function Contact() {
 
   return (
     <div>
+      <Helmet>
+        <title>Contact | Muthukumaran R - Full-Stack Web Developer</title>
+        <meta
+          name="description"
+          content="Contact Muthukumaran R, a Full-Stack Web Developer from Tirunelveli. Reach out for freelance projects or collaborations in React, Laravel, and UI/UX design."
+        />
+        <meta
+          name="keywords"
+          content="Contact Muthukumaran, Full-Stack Developer Contact, Freelance Developer, React Developer India, Tirunelveli Developer"
+        />
+        <meta name="author" content="Muthukumaran R" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "mainEntity": {
+                "@type": "Person",
+                "name": "Muthukumaran R",
+                "url": "https://kumaranraja.in/contact",
+                "jobTitle": "Full-Stack Web Developer",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "Freelance"
+                },
+                "sameAs": [
+                  "https://github.com/Kumaran-raja",
+                  "https://www.linkedin.com/in/muthukumaran-r/"
+                ]
+              }
+            }
+          `}
+        </script>
+
+        {/* Open Graph for Facebook/LinkedIn */}
+        <meta property="og:title" content="Contact | Muthukumaran R" />
+        <meta
+          property="og:description"
+          content="Reach out to Muthukumaran R for freelance web and app development services. Specialized in React, Laravel, Flutter."
+        />
+        <meta property="og:image" content="https://kumaranraja.in/profile.jpg" />
+        <meta property="og:url" content="https://kumaranraja.in/contact" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact | Muthukumaran R" />
+        <meta
+          name="twitter:description"
+          content="Let's connect! Reach out to Muthukumaran R for your web/app development needs."
+        />
+        <meta name="twitter:image" content="https://kumaranraja.in/profile.jpg" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://kumaranraja.in/contact" />
+      </Helmet>
+      
         <h1 className='contact_hide'>Contact Us</h1>
         <div className='contact_grid'>
         <div className='img_with_name'>
             <h1 className='contact_content'>Contact Us</h1>
-            <img className='contact_img' src={contactimg} alt="" />
+            <img className='contact_img' src={contactimg} alt="muthukumaran r portfolio contact image" />
         </div>
         <form ref={formRef} className='contact_msg_container' onSubmit={sendEmail}>
             <div>

@@ -5,7 +5,7 @@ import Home from './components/home';
 import Header from './components/header';
 import Certificates from './components/certificate';
 import Skills from './components/skills';
-import Contacts from './components/contact';
+import Contact from './components/contact';
 import Projects from './components/projects';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
@@ -19,7 +19,7 @@ root.render(
       <Route path="/certificates" element={<Certificates />}/>
       <Route path="/skills" element={<Skills />}/>
       <Route path="/projects" element={<Projects />}/>
-      <Route path="/contacts" element={<Contacts />}/>
+      <Route path="/contact" element={<Contact />}/>
     </Routes>
   </Router>
 );

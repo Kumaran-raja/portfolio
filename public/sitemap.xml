@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://kumaranraja.in/</loc>
+        <priority>1.00</priority>
+        <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://kumaranraja.in/projects</loc>
+        <priority>0.80</priority>
+        <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://kumaranraja.in/contact</loc>
+        <priority>0.64</priority>
+        <lastmod>2025-04-05</lastmod>
+    </url>
+     <url>
+        <loc>https://kumaranraja.in/certificates</loc>
+        <priority>0.80</priority>
+        <lastmod>2025-04-05</lastmod>
+    </url>
+     <url>
+        <loc>https://kumaranraja.in/skills</loc>
+        <priority>0.80</priority>
+        <lastmod>2025-04-05</lastmod>
+    </url>
+</urlset>
