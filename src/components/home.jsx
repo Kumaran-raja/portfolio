@@ -16,11 +16,11 @@ export default function Home() {
           UI/UX Designer | Full-Stack Developer | Application Developer
           </h2>
           <div>
-            <a href="https://www.instagram.com/kumaranraja_22/" target='_blank'><img className="contact_icons" src={instagram} alt="instagram"/></a>
-            <a href="https://www.linkedin.com/in/muthukumaran-r/" target='_blank'><img className="contact_icons" src={linkedin} alt="Linkedin"/></a>
-            <a href="https://github.com/Kumaran-raja" target='_blank'><img className="contact_icons" src={github} alt="Github"/></a>
-            <a href="https://www.facebook.com/kumaranraja22/" target='_blank'><img className="contact_icons" src={facebook} alt="Facebook"/></a>
-            <a href="https://wa.me/919543439311?text=Hi there!" target='_blank'><img className="contact_icons" src={whatsapp} alt="whatsapp"/></a>
+            <a href="https://www.instagram.com/kumaranraja_22/" target='_blank'><img className="contact_icons" src={instagram} alt="muthukumaran r portfolio instagram logo"/></a>
+            <a href="https://www.linkedin.com/in/muthukumaran-r/" target='_blank'><img className="contact_icons" src={linkedin} alt="muthukumaran r portfolio Linkedin logo"/></a>
+            <a href="https://github.com/Kumaran-raja" target='_blank'><img className="contact_icons" src={github} alt="muthukumaran r portfolio Github logo"/></a>
+            <a href="https://www.facebook.com/kumaranraja22/" target='_blank'><img className="contact_icons" src={facebook} alt="muthukumaran r portfolio Facebook logo"/></a>
+            <a href="https://wa.me/919543439311?text=Hi there!" target='_blank'><img className="contact_icons" src={whatsapp} alt="muthukumaran r portfolio whatsapp logo"/></a>
           </div>
         </div>
     </div>
