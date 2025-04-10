@@ -1,1 +1,7 @@
-/* /index.html 200
+# Redirect all www to non-www (with full path)
+https://www.kumaranraja.in/* https://kumaranraja.in/:splat 301!
+http://kumaranraja.in/* https://kumaranraja.in/:splat 301!
+http://www.kumaranraja.in/* https://kumaranraja.in/:splat 301!
+
+# React Router fallback (must stay at bottom)
+ /* /index.html 200
